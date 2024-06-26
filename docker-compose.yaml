@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  app:
+    image: mgappy_ser:v1
+    restart: always
+    environment:
+      - MYSQL_HOST=51.210.111.16
+      - MYSQL_USER=Python
+      - MYSQL_PASSWORD=PYTh@n2024#
+      - MYSQL_DATABASE=dbVitalFinancepython
+      - LIENAPISMS=http://51.210.111.16:722/
+      - PORT_NUMBER=5980
+    ports:
+      - 5980:5980
